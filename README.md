@@ -7,6 +7,15 @@ Playing cards will be given out to n(number) people.
 ### Purpose  
 Total 52 cards containing 1-13 of each Spade(S), Heart(H), Diamond(D), Club(C) will be given to n people randomly.
 
+### Output Format
+    a. Spade = S, Heart = H, Diamond = D, Club = C  
+    b. Card 2 to 9 are, as it is, 1=A, 10=X, 11=J, 12=Q, 13=K  
+    c. The card distributed to the first person on the first row will be separated (comma),  
+    d. The card distributed to the second person on the second row will be separated(comma),  
+    e. [LF] is not allowed. Example:  
+        S-A,H-X,.....  
+        D-3,H-J,.....  
+    
 ### Steps
 ```
 docker-compose build
