@@ -1,5 +1,5 @@
 # card-distributor
-A personal playing cards distributor program written in PHP.
+A personal playing cards distributor program written in Laravel PHP and run in virtual machine using Docker.
 
 ### Theme  
 Playing cards will be given out to n(number) people.  
