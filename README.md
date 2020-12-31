@@ -1,5 +1,5 @@
 # card-distributor
-A personal playing cards distributor program written in PHP.
+A personal playing cards distributor program written in Laravel PHP and run in virtual machine using Docker.
 
 ### Theme  
 Playing cards will be given out to n(number) people.  
@@ -11,6 +11,13 @@ Total 52 cards containing 1-13 of each Spade(S), Heart(H), Diamond(D), Club(C) w
 ```
 docker-compose build
 docker-compose up -d
+docker-compose exec -u root app bash
+```
+
+```
+composer install
+composer update
+composer dumpautoload -o
 ```
 
 Open browser and type `http://localhost/login` in the address bar.  
