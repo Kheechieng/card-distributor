@@ -39,6 +39,9 @@
                             </form>
                         </div>
                         <br/><br/>
+                        <div class="row">
+                            <h6>Result: </h6>
+                        </div>
                         {!! $result ?? '' !!}
                     </div>
                 </div>

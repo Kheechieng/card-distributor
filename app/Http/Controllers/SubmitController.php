@@ -9,7 +9,7 @@ class SubmitController extends Controller
     public function distribute(Request $request)
     {
         $validated = $request->validate([
-            'no_of_people' => 'required|numeric|min:0',
+            'no_of_people' => 'required|integer|min:1',
         ]);
 
         $shapes = array('S', 'H', 'D', 'C');
@@ -27,12 +27,18 @@ class SubmitController extends Controller
         $shuffled->all();
 
         $no_of_people = $request->no_of_people;
-        $cards_per_person = count($shuffled) / $no_of_people;
+        $cards_per_person = floor(count($shuffled) / $no_of_people);
+        if ($cards_per_person < 1)
+            $cards_per_person = 1;
         $result = '';
 
         for($i = 0; $i < $no_of_people; $i++) {
+            $result .= 'Person #'.($i + 1).' => ';
             for($j = $i * $cards_per_person; $j < ($i + 1) * $cards_per_person; $j++) {
-                $result .= $shuffled[$j].',';
+                if ($j < 52) {
+                    $result .= $shuffled[$j].',';
+                    unset($shuffled[$j]);
+                }
             }
             $result .= '<br/>';
         }
