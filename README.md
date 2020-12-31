@@ -24,4 +24,9 @@ Open browser and type `http://localhost/login` in the address bar.
 
 
 ![image](https://user-images.githubusercontent.com/19460508/103405802-54ce1600-4b93-11eb-8177-f383b9bfeac3.png)
-![image](https://user-images.githubusercontent.com/19460508/103405806-5a2b6080-4b93-11eb-860d-aa9a172ea1c3.png)
+![image](https://user-images.githubusercontent.com/19460508/103410407-0ece7d80-4ba6-11eb-8c25-23b5a811b359.png)
+
+Invalid input  
+
+
+![image](https://user-images.githubusercontent.com/19460508/103410411-12620480-4ba6-11eb-9c70-4baf20963623.png)
