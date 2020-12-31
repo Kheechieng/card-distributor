@@ -6,3 +6,11 @@ Playing cards will be given out to n(number) people.
 
 ### Purpose  
 Total 52 cards containing 1-13 of each Spade(S), Heart(H), Diamond(D), Club(C) will be given to n people randomly.
+
+### Steps
+```
+docker-compose build
+docker-compose up -d
+```
+
+Open browser and type `http://localhost/home` in the address bar.  
